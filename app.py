@@ -7,6 +7,7 @@ from flask_script import Manager
 from functools import wraps
 from datetime import datetime
 
+
 app = Flask(__name__)
 
 app.config['MYSQL_HOST'] = 'localhost'
