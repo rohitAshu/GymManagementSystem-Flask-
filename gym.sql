@@ -2,6 +2,7 @@ CREATE TABLE info(username VARCHAR(200), password VARCHAR(500), name VARCHAR(100
 
 --CREATE TABLE members(username VARCHAR(200), plan VARCHAR(100), trainor VARCHAR(200), FOREIGN KEY(username) references info(username), PRIMARY KEY(username), FOREIGN KEY(trainor) references info(username));
 
+
 CREATE TABLE plans(name VARCHAR(100), PRIMARY KEY(name));
 
 CREATE TABLE receps(username VARCHAR(200), PRIMARY KEY(username), FOREIGN KEY(username) references info(username));
